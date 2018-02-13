@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Hospital Record Database</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>Acme</span> Web Design</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Hospital Record Database</h3>
+        <ul>
+          <li><i class="fa fa-road"></i>Mater Private Hospital</li>
+          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+          <li><i class="fa fa-envelope"></i>hospital@hospital.ie</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Please input Patient Records</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="Name" id="name" required>
+          </p>
+          <p>
+            <label>Age</label>
+            <input type="text" name="Age" id="age">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Home Address</label>
+            <input type="text" name="Address" id="address" class="form-control form-control-lg" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="Telephone" id="phone">
+          </p>
+          <p>
+            <label>Illness</label>
+            <input type="text" name="Illness" id="illness">
+          </p>
+          <p class="full">
+            <label>Additional Notes</label>
+            <textarea name="AddNotes" rows="5" id="addnotes"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+          <form>
+            <div>
+              <input type="radio" id="r1" name="check" value="Ambulance" checked="checked">Ambulance
+              <input type="radio" id="r2" name="check" value="Car">Car
+              <input type="radio" id="r3" name="check" value="Other">Other
+            </div>
+          </form>
+        </form>
+      </div>
+    </div>
+  </div>
+    <p><button id = "SignOut" onclick="window.location='SignIn.html'; firebase.auth().signOut();">Sign Out</button></p>
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="main.js"></script>
+
+  <script>
+    //TODO: Pass lat, lng and fullAddress to main.js
+    //Append variables to other variables sent to Firebase
+  </script>
+</body>
+</html>
