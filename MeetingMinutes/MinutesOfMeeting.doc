@@ -1,0 +1,28 @@
+Minutes of the Meeting:
+
+12th of February 2018:
+
+Present: Alan, Stephen, Eoin
+
+Stephen demonstrated permissions idea/proposal in Java.
+Looked into the possibility of conversion of idea to JavaScript.
+
+Began creation of Story Map:
+-	Each member present, demonstrated the work done from the previous week, i.e. how they interpreted the creation of a story map.
+-	Discussion of what activities were deemed appropriate with assistance from demonstrators
+-	Delegation of tasks/activities were discussed
+-	Tasks were transferred to Q Cards and a final story map was constructed
+-	Discussion on the variety of priorities were made
+-	Tasks were divided by priority
+
+Following the Story Map talk, there was more project discussion that was conducted in relation to colour scheme, text styling etc. for the web app. Also, the need for more research into design and logo creation.
+We agreed that the data that was to be pulled down from Firebase needed to be formatted into two ways. One for a high level of detail for Doctors and Nurses to interpret and another that could be possibly exported as a 'family friendly version' as an email or PDF for family members to understand what is the current update of their sick family member.
+
+A second meeting this week was scheduled for Wednesday at 11am.
+
+It was agreed that we would each research the following topics:
+
+Alan: Sending Data to Firebase, Designing the create record page
+Eoin: Pulling data from firebase and creating the family friendly report
+Stephen: Also looking into pulling data from firebase with Eoin
+Andre: Design the look of the login page
