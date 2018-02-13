@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <h1>This is the home page</h1>
+
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script>
+  var config = {
+    apiKey: "AIzaSyAey-jFFUjHkVV_S4tlXZn6bnVKTdACjHA",
+    authDomain: "contactform-9da8f.firebaseapp.com",
+    databaseURL: "https://contactform-9da8f.firebaseio.com",
+    projectId: "contactform-9da8f",
+    storageBucket: "contactform-9da8f.appspot.com",
+    messagingSenderId: "900426040550"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+</head>
+
+
+<body>
+  <p>This is a paragraph</p>
+
+<script>
+  
+    function checkLogin() {
+      
+      // Listening for auth state changes.
+      firebase.auth().onAuthStateChanged(function(user) {
+        //This function checks to see if the user is logged in or not
+
+        if (user) {
+          
+          console.log('The user is signed in');
+          
+        } else {
+          //TODO: re-direct the user immediately to the log in page
+          console.log('The user is signed out');
+        }
+
+      });
+      
+    }
+
+    checkLogin();
+
+  </script>
+
+<p><button id = "SignOut" onclick="window.location='SignIn.html'; firebase.auth().signOut();">Sign Out</button></p>
+</body>
+</html>
