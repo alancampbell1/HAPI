@@ -26,3 +26,18 @@ Alan: Sending Data to Firebase, Designing the create record page
 Eoin: Pulling data from firebase and creating the family friendly report
 Stephen: Also looking into pulling data from firebase with Eoin
 Andre: Design the look of the login page
+
+Meeting 14/02/2018:
+
+All present.
+Discussion of different work done since Monday the 12th.
+Alan demonstrated Login work capabilities with Firebase.
+Eoin and Stephen demonstrated how to send and pull data from Firebase.
+Code demonstration was conducted.
+It was agreed that GitHub would be used to share code across each other.
+A retry of the User Story was needed for the final report.
+For Monday, it was agreed that each person would do the following:
+- Eoin: Design
+- Stephen: Pulling data, creation of an Index Page and a page detailing all childs
+- Alan: Continuing Login work
+Next meeting would be on Monday the 19th of February.
