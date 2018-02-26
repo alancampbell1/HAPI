@@ -41,3 +41,34 @@ For Monday, it was agreed that each person would do the following:
 - Stephen: Pulling data, creation of an Index Page and a page detailing all childs
 - Alan: Continuing Login work
 Next meeting would be on Monday the 19th of February.
+
+
+Meeting Monday 26/2/18:
+
+Scrum Meeting Commenced:
+
+All Present.
+The first week of the first sprint commenced.
+Eoin: worked with Stephen on Firebase.This included working on pulling data from Firebase and displaying it in HTML.
+Eoin also worked on NodeJS in particular linked HMTL with CSS and JavaScript.
+He hopes to continue this work into the end of the first sprint.
+
+Stephen: worked with Eoin on Firebase, in particular on pulling data from Firebase into a HTML view. This included pulling
+particular child data on certain patients and worked on button clicks to change different patient details.
+Stephen also worked on spliting incoming data up, a key part to the section on sending data to families. He hopes to continue 
+this and finish by the end of sprint one.
+
+Alan: worked on user login including creating an account, password retrieval and signing in. Also included was determining 
+different ways users could access the different pages.
+Login design is also complete and Alan hopes to include bringing up User info on the home page welcoming them.
+Alan hopes to finish this and commence work on sending data via nodemailer.
+
+Andreaz: worked on the Home page design. This included combining HTML and CSS files etc together. It has been requested that
+he finishes his design by the end of the first week and commence work on the server side of things.
+
+It was agreed amoung the group that all code should be commented and split up (i.e. all HTML in HTML files, all JavaScript
+in JS files and all CSS in CSS files etc).
+
+We agreed to meet up again, Weds 26th of Feb 2018.
+
+
