@@ -11,3 +11,6 @@ npm install express-handlebars
 
 Install nodemailer:
 npm install nodemailer --save
+
+
+You must also provide an email address and password in the Server.js file in order to send emails, preferably from Gmail.
