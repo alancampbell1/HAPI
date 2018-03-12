@@ -72,3 +72,16 @@ in JS files and all CSS in CSS files etc).
 We agreed to meet up again, Weds 26th of Feb 2018.
 
 
+SCRUM Meeting Monday the 12th of March 2018
+
+Present: Alan, Stephen and Eoin
+
+The purpose of this SCRUM meeting is to demonstrate the code we have been working on.
+
+- Alan: demonstrated the login features, the change of home page design, the automatic sign out, the send email with data
+pulled from Firebase and the send text message data.
+- Stephen: demonstrated pulling and sending data to Firebase.
+- Eoin: demonstrated server side creation etc.
+
+The group have agreed the next step is to establish a final database design and try uploading it to the server. An overall
+look at integrating all the code together.
