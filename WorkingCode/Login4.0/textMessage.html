@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HAPI</title>
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
+
+  <script>
+  var config = {
+    apiKey: "AIzaSyAey-jFFUjHkVV_S4tlXZn6bnVKTdACjHA",
+    authDomain: "contactform-9da8f.firebaseapp.com",
+    databaseURL: "https://contactform-9da8f.firebaseio.com",
+    projectId: "contactform-9da8f",
+    storageBucket: "contactform-9da8f.appspot.com",
+    messagingSenderId: "900426040550"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+  <script type="text/javascript">
+      function openPage(){
+          window.location = "Home";}
+  </script>
+
+
+  <title>Send Text Messages</title>
+</head>
+<body onload="getDetails();">
+  <div class="container">
+    <h2>Send SMS Message</h2>
+    <p id = "userInfo"></p>
+    <input type="tel" name="number" id="number" placeholder="Enter Phone Number...">
+    <input type="text" name="msg" id="msg" placeholder="Enter Text...">
+    <input type="button" onclick="setTimeout(function() { openPage(); }, 5000);" id="button" value ="Send Text" class="button button-primary">
+    <p class = "response"></p>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="JS/textMessage.js"></script>
+</body>
+</html>
