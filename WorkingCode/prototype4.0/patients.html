@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Page</title>
+    <link rel="stylesheet" type="text/css" href="/css/patient.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+
+<script>
+   //This JQuery is used to time the user out after x secs with in-activity/button clicks
+   $(document).click(function(){
+        if(typeof timeOutObj != "undefined") {
+            clearTimeout(timeOutObj);
+        }
+
+        timeOutObj = setTimeout(function(){ 
+            localStorage.clear();
+            firebase.auth().signOut();
+            window.location = "LoginOptions";
+        }, 100000);   //will expire after twenty minutes
+
+   }); 
+</script>
+
+<div id='read'>
+    <header><h1> Reading Records </h1></header>
+    <table id="familyTable"> 
+        <tr> 
+            <td> ID : </td>
+            <td> NAME: </td>
+            <td> ADDRESS: </td>
+            <td> BLOOD:  </td>
+            <td> CONDITION: </td>
+        </tr>
+        <tr>
+            <td id="id"> </td>
+            <td id="name"></td>
+            <td id="address"></td>
+            <td id="blood"></td>
+            <td id="condition"></td>
+        </tr>
+    </table>
+
+
+   <!--  <button id="patientChange1" value="0001" onClick="personChange('0001');"> 0001 </button>
+    <button id="patientChange2" value="0002" onClick="personChange('0002');"> 0002 </button>
+    <button id="patientChange3" value="0003" onClick="personChange('0003');"> 0003 </button>
+     --><div name="newStuff" id="newStuff" > </div>
+
+<br><br><br><br><br>
+
+</div>
+
+<br><br>
+<div id='daysDiv'>
+
+    </div>
+    <p id="day"> </p>
+    <table id="recordTable"> 
+        <tr> 
+            <td> DATE : </td>
+            <td> TEMP: </td>
+            <td> PAIN: </td>
+            <td> NURSE: </td>  
+            <td> CHECK: </td>
+            <td> LAST PS </td>
+        </tr>
+        <tr>
+            <td id="recordDate"> </td><br>
+            <td id="recordTemp"></td>
+            <td id="recordPain"></td>
+            <td id="recordNurse"></td>
+            <td id="recordCheck"></td>
+            <td id="recordPS"></td>
+        </tr>     
+    </table>
+
+
+
+
+
+
+ <!--    
+<button id="dayChange1" value="Day1" onClick="dayChange('Day1');"> Day1 </button>
+    
+<button id="dayChange2" value="Day2" onClick="dayChange('Day2');"> Day2 </button>
+<button id="dayChange3" value="Day3" onClick="dayChange('Day3');"> Day3 </button>
+ -->
+
+<br><br><br><br><br>
+
+
+
+
+<form id="form">
+    Adding to/Edit Record: <br>
+    Breath:<input type="text" contenteditable="true" id="breath">
+    Pain:<input type="text" contenteditable="true" id="pain">
+    <button type="button" onClick="sendRecord();">Submit </button>
+</form>
+
+<br><br><br><br><br>
+
+
+<form id="newRecordForm">
+    Creating a new Record
+    <!-- <button type="button" onClick="newRecord();"> New Record </button> -->
+    <button type="button" onClick="createRecord();"> Create Record </button> <a href="newRecord.html"> Enter new Record </a>
+    <br><br><br>
+    <button type="button" onClick="createPatient()">Create Patient</button>
+    <a href="newPatient.html"> Add Patient Details </a>
+
+</form>
+
+<button type="button" onClick="deleteDay();"> Delete Day </button>
+<button type="button" onClick="deletePatient();"> Delete Patient</button>
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script src="JS/patients.js"></script>
+
+</body>
+</html>
