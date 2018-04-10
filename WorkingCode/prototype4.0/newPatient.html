@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Patient</title>
+  <link rel="stylesheet" type="text/css" href="/css/patient.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+
+<script>
+   //This JQuery is used to time the user out after x secs with in-activity/button clicks
+   $(document).click(function(){
+        if(typeof timeOutObj != "undefined") {
+            clearTimeout(timeOutObj);
+        }
+
+        timeOutObj = setTimeout(function(){ 
+            localStorage.clear();
+            firebase.auth().signOut();
+            window.location = "LoginOptions";
+        }, 100000);   //will expire after twenty minutes
+
+   }); 
+</script>
+
+  <form id="newPatientForm" >
+    <div id= 'personal'>
+    <p>Personal:</p>
+    Name <input type="text" id="name"> <br>
+    DOB <input type="Date" id="DOB"> <br>
+    Address <input type="text" id="address" > <br>
+    BloodType <input type="text" id="bloodType"><br>
+    Condition <input type="text" id="condition"><br>
+    Primary ID <input type="text" id="userId"><br>
+    Age <input type="text" id="age"><br>
+    Gender<input type="text" id="gender"><br>
+    Martial Status <input type="text" id="martial"><br>
+    Occupation <input type="text" id="occupation"><br>
+    <br>
+  </div>
+  <div id = "treatment">
+    <p>Treatment:</p><br>
+    Allergies<input type="text" id="allergies"><br>
+    Allergic Reaction <input type="text" id="allergicReaction"><br>
+    Date of Pre-Assessment <input type="date" id="dateOfPreAssessment"><br>
+    MRSA <input type="text" id="mrsa"><br>
+    Name of Nurse <input type="text" id="nurseName"><br>
+    Patient Understanding of Admission <input type="text" id="understandingOfAdmission"><br>
+    Proposed Date of Surgery<input type="date" id="proposedDateOfSurgery"><br>
+    Proposed Surgery <input type="text" id="proposedSurgery"><br>
+    Recent Admissions <input type="text" id="recentAdmission"><br>
+    
+  </div>
+  <br>
+  <div id="contact"
+    <p>Contact:</p> <br>
+    Next of Kin: <input type="text" id="nextOfKinName"><br>
+    Next of Kin phone: <input type="text" id="nextOfKinPhone"><br>
+    Next of Kin Address: <input type="text" id="nextOfKinAddress"><br>
+    Next of kin Relationship: <input type="text" id="nextOfKinRelationship"><br>
+    PHN: <input type="text" id="PHN"><br>
+    GP Name: <input type="text" id="gpName"><br>
+    GP Address: <input type="text" id="gpAddress"><br>
+    Medical Card <input type="text" id="medicalCard"><br>
+    Surgery Phone <input type="text" id="surgeryPhone"><br>
+
+  </div>
+
+    <button type="button" onClick="sendNewPatient(userId)">Add Details</button>
+
+    <!--<a href="Home" > Back </a>-->
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script src="JS/newPatient.js"> </script>
+
+  </form>
+  <p><button id = "Home" onclick="window.location='Home'">Home</button></p>
+
+</body>
+</html>
