@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HAPI</title>
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script src="JS/email.js"></script>
+  <link rel="stylesheet" href="/css/email.css">
+
+  <script>
+  var config = {
+    apiKey: "AIzaSyAey-jFFUjHkVV_S4tlXZn6bnVKTdACjHA",
+    authDomain: "contactform-9da8f.firebaseapp.com",
+    databaseURL: "https://contactform-9da8f.firebaseio.com",
+    projectId: "contactform-9da8f",
+    storageBucket: "contactform-9da8f.appspot.com",
+    messagingSenderId: "900426040550"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+
+  <title>Sample Email Send</title>
+</head>
+<!--
+<body onload="getDetails()">
+  <div class="container">
+    <h1 class="brand"><span>HAPI</span> Hospital App</h1>
+      <div class="contact">
+        <form method="POST" action="send">
+          <p>
+            <p>
+            <label>Name</label>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <label>Hospital</label>
+            <input type="text" name="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea  id = "myTextarea" name="message" rows="5"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" onclick="setTimeout(function() { openPage(); }, 8000);">Submit</button>
+
+            <script type="text/javascript">
+                function openPage(){
+                    window.location = "Home";
+                }
+            </script>
+          </p>
+        </form>
+      </div>
+  </div>
+</body>
+-->
+
+<body background="img/image5.jpeg" onload="getDetails()">
+    <div id="pimg1">
+      <div class="form-style-6">
+        <h1>Send Details with HAPI Email</h1>
+        <div class="container">
+          <div class="contact">
+            <form method="POST" action="send">
+            <p>
+              <p>
+              <label>Name</label>
+              <input type="text" name="name"/>
+              </p>
+              <p>
+              <label>Hospital</label>
+              <input type="text" name="company"/>
+              </p>
+              <p>
+              <label>Email Address</label>
+              <input type="email" name="email"/>
+              </p>
+              <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone"/>
+              </p>
+              <p>
+              <label>Patient Details</label>
+              <textarea id = "myTextarea" name="message" rows="5"></textarea>
+              </p>
+              <p class="full">
+                  <button type="submit" class="submit" onclick="setTimeout(function() { openPage(); }, 8000);">Submit</button>
+                  <script type="text/javascript">
+                      function openPage(){
+                          window.location = "Home";
+                      }
+                  </script>
+              </p>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+
+</html>
