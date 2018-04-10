@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HAPI</title>
+  <link rel="stylesheet" href="/css/SignUpStyle.css">
+  <script src="JS/SignUp.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+
+ <!--
+  The following is the config files necessary to access the specific Firebase project and gain access to their corresponding
+  function for the sign up.
+  -->
+
+  <script>
+  var config = {
+    apiKey: "AIzaSyAey-jFFUjHkVV_S4tlXZn6bnVKTdACjHA",
+    authDomain: "contactform-9da8f.firebaseapp.com",
+    databaseURL: "https://contactform-9da8f.firebaseio.com",
+    projectId: "contactform-9da8f",
+    storageBucket: "contactform-9da8f.appspot.com",
+    messagingSenderId: "900426040550"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+
+<!--
+This is the HTML section for this Sign uP page. There are three inputs for the input their details and and one button for the user to send the request.
+-->
+
+</head>
+<body class ="animate-in">
+  <div class="pimg1">
+    <div class="ptext">
+
+      <p class = "introText" style="background-color: #fff">
+      Please input your details and upload Photo ID
+     </p>
+
+      <span class="border">
+
+        <input type="text" id="email" name="email" placeholder="Email"/>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Password"/>
+        <br>
+        <input type="text" id="username" name="username" placeholder="Username (Please include Title)"/>
+        <br>
+        <input type="file" class="upload-group" id="file">
+        <br>
+        <button class = "button" id="sign-up" onclick="confirmUpload()">Sign Up</button>
+        <!--<button class = "button" id="sign-up" onclick="setTimeout(function() { confirmUpload(); }, 3000);">Sign Up</button>-->
+      </span>
+    </div>
+  </div>
+  <section class="section section-light">
+    <h2>Welcome to HAPI</h2>
+    <p>
+    </p>
+  </section>
+</body>
+</html>
