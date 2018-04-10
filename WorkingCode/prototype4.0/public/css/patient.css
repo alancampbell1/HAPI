@@ -1,0 +1,20 @@
+#read {
+  width:50%;
+  background-color: beige;
+  border-right: 1px solid black;
+  border:2px solid black;
+}
+#daysDiv{
+  width:20%;
+  background-color: beige;
+  border-right: 1px solid black;
+  border:2px solid black;
+
+}
+#recordTable{
+  background-color: beige;
+  border:1px solid black;
+}
+div {
+  background-color: beige;
+}
