@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Record</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+
+<script>
+   //This JQuery is used to time the user out after x secs with in-activity/button clicks
+   $(document).click(function(){
+        if(typeof timeOutObj != "undefined") {
+            clearTimeout(timeOutObj);
+        }
+
+        timeOutObj = setTimeout(function(){ 
+            localStorage.clear();
+            firebase.auth().signOut();
+            window.location = "LoginOptions";
+        }, 100000);   //will expire after twenty minutes
+
+   }); 
+</script>
+
+<div id="newRecord">
+Daily Patient Record:
+  <form id="newPatientForm" >
+    Primary ID <input type="text" id="userId"><br>
+    
+    <!-- Date<input type="date" id="DATE"> <br> -->
+    Day <input type="text" id="Day"><br>
+    Pain levels <input type="text" id="PL" > <br>
+    Tempature <input type="text" id="temp"><br>
+    Respiratory Rate <input type="text" id="respiratory"><br>
+    IV Check <input type="text" id="iv"><br>
+    Wound Checked <input type="text" id="wound"><br>
+    Nurse Number <input type="text" id="nurseNumber"><br>
+
+
+    INTAKE:<br>
+    Time:<select id="timeOfFluid">
+      <option value="none">None</option>
+      <option value="3h">3h</option>
+      <option value="6h">6h</option>
+      <option value="12h">12h</option>
+    </select><br>
+    Fluid<select id="typesOfFluid">
+      <option value="none">None</option>
+      <option value="water">Water</option>
+      <option value="drip">Drip</option>
+      <option value="IV">IV</option>
+    </select><br>
+    OUT:<br>
+    Type:<br>
+    <select id="outType">
+      <option value="none">None</option>
+      <option value="vomit">Vomit</option>
+      <option value="Urine">Urine</option>
+      <option value="discharge">Discharge</option>
+    </select><br>
+    <br>
+    Comments : <input type="text" id="Comments"><br>
+    <br><br><br><br>
+    Pain System:<br>
+    Activity:<select id="painActivity">
+      <option value=0>0</option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+    </select><br>
+    Respiration:<select id="painRespiration">
+      <option value=0>0</option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+    </select><br>
+    Circulation:<select id="painCirculation">
+      <option value=0>0</option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+    </select><br>
+    Conciousness:<select id="painConciousness">
+      <option value=0>0</option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+    </select><br>
+    Oxygen Saturation:<select id="painOxygen">
+      <option value=0>0</option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+    </select><br>
+    Dressing:<select id="painDressing">
+      <option value=0>0</option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+    </select><br>
+    Pain:<select id="painPain">
+      <option value=0>0</option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+    </select><br>
+    Ambutation:<select id="painAmbutation">
+      <option value=0>0</option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+    </select><br>
+    Fasting/Feeding:<select id="painFastFeed">
+      <option value=0>0</option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+    </select><br>
+    Urine Output:<select id="painUrineOutput">
+      <option value=0>0</option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+    </select><br>
+
+
+<br><br>
+    <button type="button" onClick="sendNewRecord(Day)">Add Details </button>
+
+    <a href="patients.html" > Back </a>
+
+  </form>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script src="JS/newRecord.js"> </script>
+
+  </form>
+
+</body>
+</html>
