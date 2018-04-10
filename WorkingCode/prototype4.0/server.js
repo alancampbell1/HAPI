@@ -83,8 +83,8 @@ app.post('/send', (req, res) => {
       secure: false,
       port: 25,
       auth: {
-        user: 'alanjamescampbell1@gmail.com',		//You will need to add your own email address here
-        pass: 'Celbridge17!'						//You will need to provide your password in order for nodemailer
+        user: 'xxxxxxxxxxxxxxxxx@gmail.com',		//You will need to add your own email address here
+        pass: 'xxxxxxxxxxxxx'						//You will need to provide your password in order for nodemailer
       },											//to send content from
       tls: {
         rejectUnauthorized: false
