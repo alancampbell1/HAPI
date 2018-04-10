@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>HAPI</title>
+<h1 id="heading"></h1>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script src="JS/HomePage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<link rel="stylesheet"           href="/css/main.css" id="main">-->
+
+<!--<link rel="stylesheet" href="/css/DocHome.css" id="doctor-styles">
+<link rel="stylesheet alternative" href="/css/NurseHome.css"  id="nurse-styles">-->
+
+  <script>
+  var config = {
+    apiKey: "AIzaSyAey-jFFUjHkVV_S4tlXZn6bnVKTdACjHA",
+    authDomain: "contactform-9da8f.firebaseapp.com",
+    databaseURL: "https://contactform-9da8f.firebaseio.com",
+    projectId: "contactform-9da8f",
+    storageBucket: "contactform-9da8f.appspot.com",
+    messagingSenderId: "900426040550"
+  };
+  firebase.initializeApp(config);
+  </script>
+
+
+</head>
+
+<!--
+This a basic home page for functionality only.
+You have to be signed in to access its functions.
+Otherwise you are sent back to the Login page
+
+There is also a sign out button that ends a user's session.
+-->
+<body>
+
+	<div id="bulk">
+  
+  <p id = "sample">This is a paragraph</p>
+  <p id = "welcome">Welcome</p>
+  <p id = "demo"></p>
+  <p id = "demo2"></p>
+
+<script>getDetails();</script>
+<script>showimage();</script>
+<script>checkLogin();</script>
+<script>letsgo();</script>
+<!--<script>changeColourScheme();</script>-->
+
+<script>
+   //This JQuery is used to time the user out after x secs with in-activity/button clicks
+   $(document).click(function(){
+        if(typeof timeOutObj != "undefined") {
+            clearTimeout(timeOutObj);
+        }
+
+        timeOutObj = setTimeout(function(){ 
+            localStorage.clear();
+            firebase.auth().signOut();
+            window.location = "LoginOptions";
+        }, 100000);   //will expire after twenty minutes
+
+   }); 
+</script>
+
+<p><button id = "SignOut" onclick="window.location='SignIn'; firebase.auth().signOut();">Sign Out</button></p>
+<p><button id = "SendEmail" onclick="window.location='email'">Send Email</button></p>
+<p><button id = "SendTextMessage" onclick="window.location='textMessage'">Send Text Message</button></p>
+
+<p><button id = "newPatient" onclick="window.location='newPatient'">New Patient</button></p>
+<p><button id = "newRecord" onclick="window.location='newRecord'">New Record</button></p>
+<p><button id = "patients" onclick="window.location='patients'">Patients</button></p>
+
+<p><button id = "printPage" onclick="forprint();">Print Page</button></p>
+
+<!--<input type="button" value ="view Image" id="viewbtn" onclick="showimage();">-->
+<img src="JS/HomePage.js" height="125px" width="200px"/>
+<br>
+	  <a id="sample2" href="" target="_blank">a</a><br><br>
+    <a id="sample3" href="" target="_blank">a</a><br><br>
+    <a id="sample4" href="" target="_blank">a</a><br><br>
+    <a id="sample5" href="" target="_blank">a</a><br><br>
+    <a id="sample6" href="" target="_blank">a</a><br><br>
+    <a id="sample7" href="" target="_blank">a</a><br><br>
+    <a id="sample8" href="" target="_blank">a</a><br><br>
+    <a id="sample9" href="" target="_blank">a</a><br><br>
+    <a id="sample10" href="" target="_blank">a</a><br><br>
+    <a id="sample11" href="" target="_blank">a</a><br><br>
+    <a id="sample12" href="" target="_blank">a</a><br><br>
+</div>
+</body>
+</html>
