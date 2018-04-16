@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HAPI</title>
+  <link rel="stylesheet" href="/css/textMessage.css">
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+      function openPage(){
+          window.location = "Home";}
+  </script>
+
+
+<title>Send Text Messages</title>
+</head>
+<body onload="getDetails(); checkLogin();" background="img/image5.jpeg">
+
+<div class="container" align="center" background="image5.jpeg">
+    <br><br>
+    <h2>Send SMS Message</h2>
+    <p id = "userInfo"></p>
+    <br><br>
+    <input type="tel" name="number" id="number" style="width: 400px; height: 25px;" placeholder="Enter Phone Number...">
+    <br><br>
+    <input type="text" name="msg" id="msg" style="width: 400px; height: 60px;" placeholder="Enter Text..."><br><br><br><br>
+    <input type="button" onclick="setTimeout(function() { openPage(); }, 5000);" id="button" value ="Send Text" class="button button-primary">
+    <p class = "response"></p>
+</div>
+
+<div class="footer" align="center">
+    <p>Welcome to the HAPI Text Message Service where Patient's next of Kin and GP's can be directly messaged</p>
+</div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="JS/textMessage.js"></script>
+</body>
+</html>

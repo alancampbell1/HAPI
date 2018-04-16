@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HAPI</title>
+  <link rel="stylesheet" href="/css/SignInStyle.css">
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script src="JS/SignIn.js"></script>
+
+<!--
+This is the HTML section for this Sign In page. There are two inputs for the input their details and and two buttons for the user to send the different requests accordingly.
+-->
+
+</head>
+<body class ="animate-in">
+  <div class="pimg1">
+    <div class="ptext">
+
+      <p class = "introText" style="background-color: #fff">
+      Please input your details
+     </p>
+
+      <span class="border">
+        <input type="text" id="email" name="email" placeholder="Email"/>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Password"/>
+        <br>
+        <button class = "button" id="sign-in">Sign In</button>
+        <button class = "button" id="password-reset">Forgot Password</button>
+      </span>
+    </div>
+  </div>
+  <section class="section section-light">
+    <h2>Welcome to HAPI</h2>
+  </section>
+</body>
+</html>

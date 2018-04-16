@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HAPI</title>
+  <link rel="stylesheet" href="/css/SignUpStyle.css">
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+  <script src="JS/SignUp.js"></script>
+
+<!--
+This is the HTML section for this Sign uP page. There are three inputs for the input their details and and one button for the user to send the request.
+-->
+
+</head>
+<body class ="animate-in">
+  <div class="pimg1">
+    <div class="ptext">
+
+      <p class = "introText" style="background-color: #fff">
+      Please input your details and upload Photo ID
+     </p>
+
+      <span class="border">
+
+        <input type="text" id="email" name="email" placeholder="Email"/>
+        <br>
+        <input type="password" id="password" name="password" placeholder="Password"/>
+        <br>
+        <input type="text" id="username" name="username" placeholder="Username (Please include Title)"/>
+        <br>
+        <input type="file" class="upload-group" id="file">
+        <br>
+        <button class = "button" id="sign-up" onclick="confirmUpload()">Sign Up</button>
+
+      </span>
+    </div>
+  </div>
+  <section class="section section-light">
+    <h2>Welcome to HAPI</h2>
+  </section>
+</body>
+</html>
