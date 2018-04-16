@@ -85,3 +85,18 @@ pulled from Firebase and the send text message data.
 
 The group have agreed the next step is to establish a final database design and try uploading it to the server. An overall
 look at integrating all the code together.
+
+
+SCRUM Meeting: Monday the 16th of April 2018
+
+Present: Alan, Stephen and Eoin
+
+Start of last Sprint.
+
+It was outlined that the project was to be completed by Monday 30th of April 2018.
+The focus on this sprint was to integrate Alan and Stephen's code together into a working final prototype.
+From there, it could to sent onto the Digital Ocean server for final deployment.
+Testing was to also be a key feature in this section. Black Box testing techniques needed to identified and tested on the
+software before presentation. This will be further discussed at a later meeting.
+Eoin was to look into security issues, SSH keys etc and have the server ready for final deployment.
+
