@@ -100,3 +100,27 @@ Testing was to also be a key feature in this section. Black Box testing techniqu
 software before presentation. This will be further discussed at a later meeting.
 Eoin was to look into security issues, SSH keys etc and have the server ready for final deployment.
 
+
+SCRUM Meeting: Friday the 20th of April 2018:
+
+Present: Alan, Stephen and Eoin
+
+Since the last meeting the initial integration of the software project was completed. The project was uploaded to the server
+and all initial functionality was tested.
+Create and retrieve techniques worked as well as sending emails and text messages.
+We all identified as series of features that still need to be addressed this included:
+- Having the colour scheme change depending on who was logged in
+- Including the print page option as part of the patient's records
+- Re-designing the patients page to make it more legible
+- Sending more patient information to the email page in order to email it on
+- Coming up with software testing techniques for the testing aspect of the project
+- Getting the SSH keys functioning
+We agreed this was in need of urgent attention before the presentation on the final week. We also took note that the
+screencast should also be completed beforehand.
+
+
+
+
+
+
+
