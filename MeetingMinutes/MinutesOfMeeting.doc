@@ -120,7 +120,7 @@ screencast should also be completed beforehand.
 
 
 23rd of April 2018:
-Present: Alan, Eoin and Stephen
+Present: Alan, Eoghan and Stephen
 Since previous meeting all integration has been completed and functionality tested for compliance.
 Eoin is to integrate SHH keys into the server for security.
 All members are to work on final CSS design.
@@ -130,7 +130,19 @@ We plan on meeting again before the end of the week to plan for the presentation
 
 
 
-
+27th of April 2018:
+Present: Alan, Eoghan and Stephen
+Final meeting prior to presentation on Monday the 30th of April.
+Digital Ocean issues still exist, alternative is github server.
+Application pages still need addition before monday. In paticular, the design on certain pages and certain elements still
+failing.
+Discussion on how to divide the presentation up was done. Stephen will open the presentation up talking about the app and will
+also talk about create patients/records with live demonstrations.
+Alan will discuss the Registration pages/user login with Firebase. He will also talk about NewsAPI, text message service and
+email service with live demonstrations.
+Eoghan will discuss establishing the server and design across the application.
+Stephen will commence the screencast during the weekend prior to the presentation, incase server issues persist over the
+weekend.
 
 
 
